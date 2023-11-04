@@ -1,0 +1,16 @@
+{
+  "name": "The Ethan Morris Experience",
+  "short_name": "EM",
+  "description": "Ethan Morris Portfolio App",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fff",
+  "theme_color": "#fff",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    }
+  ]
+}
