@@ -1,0 +1,19 @@
+<svg width="180" height="180" version="1.1" id="svg1" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    #e {
+      fill: #000000;
+    }
+    #triangle {
+      fill: #591e66;
+    }
+    @media (prefers-color-scheme: dark) {
+      #e, #triangle {
+        fill: #ffffff;
+      }
+    }
+  </style>
+  <g id="layer1">
+    <path id="e" d="M0 0v180h180v-40H40v-30h80L80 90l40-20H40V40h140V0H40Z" />
+    <path id="triangle" d="m140.088 70-13.955 8.057V61.943Z" transform="matrix(-2.86638 0 0 2.48236 541.546 -83.765)"/>
+  </g>
+</svg>
