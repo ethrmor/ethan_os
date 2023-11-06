@@ -1,7 +1,7 @@
 import { getProject } from "@/sanity/utils";
 import { PortableText } from "@portabletext/react";
+import { Breadcrumb } from "@/components/breadcrumb";
 import Image from "next/image";
-import Link from "next/link";
 
 type Props = {
   params: { project: string };
@@ -11,9 +11,9 @@ export default async function Project({ params }: Props) {
   const slug = params.project;
   const project = await getProject(slug);
   return (
-    <>
-      <Link href="/projects">Back</Link>
-      <article className="prose prose-sm md:prose-base prose-zinc dark:prose-invert container py-8">
+    <section className="py-8">
+      <Breadcrumb />
+      <article className="prose prose-sm prose-zinc dark:prose-invert md:prose-base">
         <h1>{project.name}</h1>
         {project.image && (
           <Image
@@ -26,6 +26,6 @@ export default async function Project({ params }: Props) {
         )}
         <PortableText value={project.content} />
       </article>
-    </>
+    </section>
   );
 }

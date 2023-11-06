@@ -11,7 +11,7 @@ import { buttonVariants } from "@/components/ui/button";
 export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-14 items-center">
+      <div className="container flex h-14 max-w-4xl items-center px-4">
         <MainNav />
         <MobileNav />
         <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
@@ -26,7 +26,7 @@ export function Header() {
                   buttonVariants({
                     variant: "ghost",
                   }),
-                  "w-9 px-0"
+                  "w-9 px-0",
                 )}
               >
                 <Icons.gitHub className="h-4 w-4" />
@@ -43,7 +43,7 @@ export function Header() {
                   buttonVariants({
                     variant: "ghost",
                   }),
-                  "w-9 px-0"
+                  "w-9 px-0",
                 )}
               >
                 <Icons.twitter className="h-3 w-3 fill-current" />
