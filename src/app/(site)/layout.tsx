@@ -32,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${manrope.className} flex min-h-screen flex-col bg-white dark:bg-zinc-900 dark:text-white`}
+        className={`${manrope.className} flex min-h-screen flex-col bg-white text-zinc-900 dark:bg-zinc-900 dark:text-white`}
       >
         <ThemeProvider
           attribute="class"

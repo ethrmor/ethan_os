@@ -5,10 +5,10 @@ export default async function Home() {
   const projects = await getProjects();
   return (
     <section className="flex flex-1 flex-col gap-2 py-8">
-      <h1 className="pb-4 pt-20 text-2xl font-extrabold text-zinc-900 md:text-5xl">
+      <h1 className="pb-4 pt-20 text-2xl font-extrabold text-zinc-900 dark:text-zinc-50 md:text-5xl">
         Problem solver. Creative thinker. Software Developer.
       </h1>
-      <p className="pb-12 text-xl text-zinc-600">
+      <p className="pb-12 text-xl text-zinc-600 dark:text-zinc-400">
         I&apos;m Ethan, a software developer based in Illinois. I&apos;m
         passionate about the web and I love building things.
       </p>

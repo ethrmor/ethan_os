@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export default function Uses() {
   return (
-    <div className="prose">
-      <h1>Uses</h1>
+    <div className="prose text-zinc-900 dark:text-zinc-50">
+      <h1 className="text-zinc-900 dark:text-zinc-50">Uses</h1>
       <p>
         Inspired by{" "}
         <Link

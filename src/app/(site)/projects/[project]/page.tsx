@@ -11,10 +11,10 @@ export default async function Project({ params }: Props) {
   const slug = params.project;
   const project = await getProject(slug);
   return (
-    <section className="prose">
+    <section className="prose text-zinc-900 dark:text-zinc-50">
       <Breadcrumb className="not-prose" />
       <article>
-        <h1>{project.name}</h1>
+        <h1 className="text-zinc-900 dark:text-zinc-50">{project.name}</h1>
         {project.image && (
           <Image
             src={project.image}

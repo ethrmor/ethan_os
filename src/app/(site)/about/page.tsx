@@ -7,9 +7,9 @@ export const metadata: Metadata = {
 
 export default function About() {
   return (
-    <div className="prose">
-      <h1>About</h1>
-      <p className="text-gray-700 dark:text-gray-300">
+    <div className="prose text-zinc-900 dark:text-zinc-50">
+      <h1 className="text-zinc-900 dark:text-zinc-50">About</h1>
+      <p>
         Hey there! I&apos;m thrilled to have you visit my personal website.
         I&apos;m a passionate software developer, dedicated to crafting
         exceptional digital experiences. Tech has always been my thing, and I
