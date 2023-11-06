@@ -11,9 +11,9 @@ export default async function Project({ params }: Props) {
   const slug = params.project;
   const project = await getProject(slug);
   return (
-    <section className="py-8">
-      <Breadcrumb />
-      <article className="prose prose-sm prose-zinc dark:prose-invert md:prose-base">
+    <section className="prose">
+      <Breadcrumb className="not-prose" />
+      <article>
         <h1>{project.name}</h1>
         {project.image && (
           <Image

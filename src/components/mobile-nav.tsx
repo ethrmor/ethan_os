@@ -52,6 +52,14 @@ export function MobileNav() {
             )}
           </div>
         </ScrollArea>
+        <div className="flex items-center justify-center gap-4">
+          <Link href="https://github.com/ermorrpheus">
+            <Icons.gitHub className="h-6 w-6" />
+          </Link>
+          <Link href="https://twitter.com/the100xdec">
+            <Icons.twitter className="h-6 w-6" />
+          </Link>
+        </div>
       </SheetContent>
     </Sheet>
   );

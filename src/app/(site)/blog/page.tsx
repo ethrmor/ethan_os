@@ -1,6 +1,6 @@
 export default function Blog() {
   return (
-    <div className="py-8">
+    <div className="prose">
       <h1>Blog</h1>
       <p>Test</p>
     </div>

@@ -2,14 +2,18 @@
 
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+import { cn } from "@/lib/utils";
 
-export function Breadcrumb() {
+export function Breadcrumb({ className }: { className?: string }) {
   const pathname = usePathname();
 
   const pathSegments = pathname.split("/").filter((segment) => segment !== "");
 
   return (
-    <nav aria-label="Breadcrumb" className="pb-4 text-sm text-zinc-400">
+    <nav
+      aria-label="Breadcrumb"
+      className={cn("pb-2 text-sm text-zinc-400", className)}
+    >
       <ul className="flex items-center gap-2">
         <li>
           <Link href="/">
