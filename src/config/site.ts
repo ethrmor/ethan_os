@@ -5,8 +5,8 @@ export const siteConfig = {
   description:
     "Software Developer. Building elegant solutions to complex problems.",
   links: {
-    twitter: "https://twitter.com/the100xdev",
-    github: "https://github.com/ermorrpheus",
+    twitter: "https://x.com/ethrmor",
+    github: "https://github.com/ethrmor",
   },
 };
 

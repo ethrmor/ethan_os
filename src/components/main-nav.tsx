@@ -16,11 +16,11 @@ export function MainNav() {
     <div className="mr-4 hidden md:flex">
       <Link href="/" className="mr-6 flex items-center space-x-2">
         <Icons.logo className="h-6 w-6" />
-        <span className="hidden font-bold sm:inline-block">
+        <span className="hidden max-w-[5ch] font-bold leading-none sm:inline-block">
           {siteConfig.name}
         </span>
       </Link>
-      <nav className="flex items-center space-x-6 text-sm font-medium">
+      <nav className="flex items-center space-x-6 text-sm font-medium leading-none">
         {docsConfig.mainNav?.map(
           (item) =>
             item.href && (

@@ -30,11 +30,13 @@ export function MobileNav() {
       <SheetContent side="left" className="pr-0">
         <MobileLink
           href="/"
-          className="flex items-center"
+          className="flex items-center space-x-2"
           onOpenChange={setOpen}
         >
           <Icons.logo className="mr-2 h-4 w-4" />
-          <span className="font-bold">{siteConfig.name}</span>
+          <span className="max-w-[5ch] font-bold leading-none">
+            {siteConfig.name}
+          </span>
         </MobileLink>
         <ScrollArea className="my-4 h-[calc(100vh-8rem)] pb-10 pl-6">
           <div className="flex flex-col space-y-3">
@@ -53,7 +55,7 @@ export function MobileNav() {
           </div>
         </ScrollArea>
         <div className="flex items-center justify-center gap-4">
-          <Link href="https://github.com/ermorrpheus">
+          <Link href="https://github.com/ethrmor">
             <Icons.gitHub className="h-6 w-6" />
           </Link>
           <Link href="https://twitter.com/the100xdec">

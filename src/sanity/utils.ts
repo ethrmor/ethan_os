@@ -12,7 +12,7 @@ export async function getProjects(): Promise<Project[]> {
       'image': image.asset->url,
       url,
       content
-    }`
+    }`,
   );
 }
 
@@ -27,6 +27,35 @@ export async function getProject(slug: string): Promise<Project> {
       url,
       content
     }`,
-    { slug }
+    { slug },
+  );
+}
+
+export async function getBlogs(): Promise<Project[]> {
+  return createClient(clientConfig).fetch(
+    groq`*[_type == "blog"]{
+      _id,
+      _createdAt,
+      name,
+      'slug': slug.current,
+      'image': image.asset->url,
+      url,
+      content
+    }`,
+  );
+}
+
+export async function getBlog(slug: string): Promise<Project> {
+  return createClient(clientConfig).fetch(
+    groq`*[_type == "blog" && slug.current == $slug][0]{
+      _id,
+      _createdAt,
+      name,
+      'slug': slug.current,
+      'image': image.asset->url,
+      url,
+      content
+    }`,
+    { slug },
   );
 }
