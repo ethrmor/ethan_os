@@ -32,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${manrope.className} flex min-h-screen flex-col bg-white text-zinc-900 dark:bg-zinc-900 dark:text-white`}
+        className={`${manrope.className} flex min-h-screen flex-col bg-white text-zinc-900 dark:bg-zinc-950 dark:text-white`}
       >
         <ThemeProvider
           attribute="class"
@@ -41,8 +41,10 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Header />
-          <main className="mx-auto w-full max-w-3xl flex-1 px-4 py-8">
-            {children}
+          <main className="bg-[url('/bg-element-light.svg')] bg-no-repeat dark:bg-[url('/bg-element.svg')] md:bg-cover">
+            <div className="mx-auto w-full max-w-5xl flex-1 px-[3vw] py-8">
+              {children}
+            </div>
           </main>
           <Footer />
         </ThemeProvider>

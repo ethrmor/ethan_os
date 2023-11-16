@@ -1,7 +1,11 @@
 export function Footer() {
   return (
-    <footer className=" bg-purple-700 py-4 text-white">
-      <div className="mx-auto max-w-3xl px-4">Footer</div>
+    <footer className=" py-4 dark:text-white">
+      <div className="mx-auto px-[3vw]">
+        <p className="text-center">
+          © {new Date().getFullYear()} Ethan Morris.{" "}
+        </p>
+      </div>
     </footer>
   );
 }
