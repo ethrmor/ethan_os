@@ -18,7 +18,7 @@ export default async function Blog({ params }: Props) {
           alt={blog.alt ? blog.alt : blog.name}
           width={1600}
           height={900}
-          className="rounded-xl"
+          className="not-prose rounded-xl"
         />
       )}
       <PortableText value={blog.content} />

@@ -19,7 +19,7 @@ export default async function Project({ params }: Props) {
           alt={project.alt ? project.alt : project.name}
           width={1600}
           height={900}
-          className="rounded-xl"
+          className="not-prose aspect-w-16 aspect-h-9 max-w-3xl rounded-xl"
         />
       )}
       <PortableText value={project.content} />
