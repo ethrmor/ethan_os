@@ -12,6 +12,7 @@ export default async function Blog({ params }: Props) {
   return (
     <article className="prose text-zinc-900 dark:text-zinc-50">
       <h1 className="text-zinc-900 dark:text-zinc-50">{blog.name}</h1>
+      <p className="text-zinc-600 dark:text-zinc-400">November 17, 2023</p>
       {blog.image && (
         <Image
           src={blog.image}
