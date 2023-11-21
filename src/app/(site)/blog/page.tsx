@@ -9,7 +9,7 @@ export default async function Blogs() {
     <div className="flex w-full flex-col gap-4">
       <section className="prose max-w-none text-zinc-900 dark:text-zinc-50">
         <h1 className="text-zinc-900 dark:text-zinc-50">Blogs</h1>
-        <div className="not-prose flex gap-4">
+        <div className="not-prose flex flex-col gap-4">
           {blogs.map((blog) => (
             <Link href={`/blog/${blog.slug}`} key={blog._id}>
               <article className="overflow-hidden rounded-lg shadow transition hover:shadow-lg">
