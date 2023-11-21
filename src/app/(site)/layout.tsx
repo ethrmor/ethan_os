@@ -41,7 +41,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Header />
-          <main className="flex-1 bg-[url('/bg-element-light.svg')] bg-no-repeat px-[3vw] py-8 dark:bg-[url('/bg-element.svg')] md:bg-cover">
+          <main className="flex-1 bg-[url('/bg-element-light.svg')] bg-auto bg-top bg-no-repeat px-[3vw] py-8 dark:bg-[url('/bg-element.svg')] md:bg-right-top">
             <div className="mx-auto w-full max-w-3xl">{children}</div>
           </main>
           <Footer />
