@@ -19,8 +19,8 @@ export default async function Home() {
       <p className="text-md pb-12 text-zinc-600 dark:text-zinc-400">
         Hi 👋🏻 I&apos;m Ethan. Welcome to my tiny little corner of the internet.
         I am a software developer based in Illinois who is passionate about all
-        things web. I love to build things, whether it&apos;s with my hands or
-        with code.
+        things web. I love to build things, whether it&apos;s with code or with
+        my hands.
       </p>
       <br />
       <h2 className="text-lg font-bold md:text-2xl">Selected Projects</h2>
