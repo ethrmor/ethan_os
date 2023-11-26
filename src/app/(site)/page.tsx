@@ -7,7 +7,7 @@ export default async function Home() {
     <section className="flex flex-1 flex-col gap-2 py-8">
       <h1 className="pb-4 pt-12 text-3xl font-extrabold text-zinc-900 dark:text-zinc-50 md:text-5xl">
         Problem solver. Creative thinker.{" "}
-        <span className="bg-gradient-to-r from-purple-900 to-purple-700 bg-clip-text text-transparent dark:from-purple-700 dark:to-purple-500">
+        <span className="bg-gradient-to-r from-purple-900 to-sky-700 bg-clip-text text-transparent dark:from-purple-700 dark:to-sky-500">
           Software Developer
         </span>
         .
