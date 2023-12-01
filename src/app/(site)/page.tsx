@@ -53,12 +53,7 @@ export default async function Home() {
                 </Link>
 
                 <p className="mt-3 line-clamp-3 text-sm/relaxed text-zinc-600 dark:text-zinc-300">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Recusandae dolores, possimus pariatur animi temporibus
-                  nesciunt praesentium dolore sed nulla ipsum eveniet corporis
-                  quidem, mollitia itaque minus soluta, voluptates neque
-                  explicabo tempora nisi culpa eius atque dignissimos. Molestias
-                  explicabo corporis voluptatem?
+                  {project.description}
                 </p>
                 <div className="mt-3 flex items-center gap-8">
                   <Link
